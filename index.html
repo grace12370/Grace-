@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>موقع مانهو بسيط</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    .chapter-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: flex-start;
+    }
+    .chapter {
+      width: 180px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fafafa;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .chapter:hover {
+      transform: scale(1.05);
+    }
+    .chapter img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .chapter-title {
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>موقعي لعرض مانهو</header>
+
+  <div class="container">
+    <h2>قائمة الفصول</h2>
+    <div class="chapter-list">
+
+      <!-- فصل 1 -->
+      <div class="chapter" onclick="alert('عرض فصل 1')">
+        <img src="https://via.placeholder.com/180x240?text=مانهو+1" alt="مانهو 1" />
+        <div class="chapter-title">الفصل 1</div>
+      </div>
+
+      <!-- فصل 2 -->
+      <div class="chapter" onclick="alert('عرض فصل 2')">
+        <img src="https://via.placeholder.com/180x240?text=مانهو+2" alt="مانهو 2" />
+        <div class="chapter-title">الفصل 2</div>
+      </div>
+
+      <!-- فصل 3 -->
+      <div class="chapter" onclick="alert('عرض فصل 3')">
+        <img src="https://via.placeholder.com/180x240?text=مانهو+3" alt="مانهو 3" />
+        <div class="chapter-title">الفصل 3</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 موقعي لعرض المانهو
+  </footer>
+
+</body>
+</html>
